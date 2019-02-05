@@ -3,7 +3,6 @@ let newItemInput = document.getElementById('newitem');
 var idCount = 6;
 newItemInput.addEventListener("keydown", function(event){
     if (event.keyCode == 13) {
-        console.log(newItemInput.value);
         addElement(newItemInput.value);
     }
 });
