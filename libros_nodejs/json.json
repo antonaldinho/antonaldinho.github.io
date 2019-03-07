@@ -1,0 +1,44 @@
+[
+    {
+      "title": "A Game of Thrones",
+      "author": "George R. R. Martin",
+      "date": "August 1996",
+      "chapters": 73
+    },
+    {
+      "title": "A Clash of Kings",
+      "author": "George R. R. Martin",
+      "date": "February 1999",
+      "chapters": 70
+    },
+    {
+      "title": "A Storm of Swords",
+      "author": "George R. R. Martin",
+      "date": "November 2000",
+      "chapters": 82
+    },
+    {
+      "title": "A Feast for Crows",
+      "author": "George R. R. Martin",
+      "date": "November 2005",
+      "chapters": 46
+    },
+    {
+      "title": "A Dance with Dragons",
+      "author": "George R. R. Martin",
+      "date": "July 2011",
+      "chapters": 73
+    },
+    {
+      "title": "The Winds of Winter",
+      "author": "George R. R. Martin",
+      "date": "Forthcoming",
+      "chapters": -1
+    },
+    {
+      "title": "A Dream of Spring",
+      "author": "George R. R. Martin",
+      "date": "Forthcoming",
+      "chapters": -1
+    }
+]
