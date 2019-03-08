@@ -1,0 +1,3 @@
+#ignore credential files
+/movies/credentials.js
+/practica4/credentials.js
