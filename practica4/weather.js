@@ -1,3 +1,6 @@
+//Codigo por Jose Antonio Aleman
+//A01196565
+//Desarrollo de Aplicaciones Web
 const request = require('request');
 const credentials = require('./credentials.js');
 
