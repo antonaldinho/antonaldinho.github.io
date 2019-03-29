@@ -29,7 +29,6 @@ app.get('/weather', function(req, res) {
                 const latitude = response.lat;
                 const longitude = response.long;
                 const place = response.place;
-                //console.log(latitude + ' ' + longitude);
                 
                 weather.getForecast(latitude, longitude, function(error, response) {
                     if(error) {

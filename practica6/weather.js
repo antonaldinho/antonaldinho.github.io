@@ -16,7 +16,6 @@ function getForecast (latParam, longParam, callback) {
                 summary: response.body.currently.summary,
                 precipitation: response.body.currently.precipProbability
             }
-            //const respuesta = 'Actualmente esta a ' + data.temperature + '°C' + ' y ' + data.summary + '. Hay un ' + data.precipProbability + '% de probablidad de lluvia.';
             callback(undefined, data);
         }
     });
