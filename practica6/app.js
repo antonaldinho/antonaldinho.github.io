@@ -11,6 +11,12 @@ const publicDir = path.join(__dirname, 'public');
 
 app.use(express.static(publicDir));
 
+app.get('/', function(req, res) {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    return res.send({
+        response: 'Welcome to the Antonio Ultimate Weather API'
+    })
+})
 app.get('/weather', function(req, res) {
     res.setHeader('Access-Control-Allow-Origin', '*');
     if(!req.query.city) {

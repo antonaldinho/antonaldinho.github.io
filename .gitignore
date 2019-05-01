@@ -1,5 +1,1 @@
-#ignore credential files
-/movies/credentials.js
-/practica4/credentials.js
-**/[Cc]redentials*
-*.zip
+node_modules/
