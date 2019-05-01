@@ -21,7 +21,7 @@ const getUser = function(req, res) {
 }
 
 const createUser = function(req, res){
-  const user = new User(req.body);
+  const user = new User(req.body)
   user.save().then(function() {
     return res.send(user)
   }).catch(function(error) {

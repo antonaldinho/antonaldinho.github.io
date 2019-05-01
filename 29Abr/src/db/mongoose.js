@@ -1,11 +1,9 @@
 
 const mongoose = require('mongoose')
 
-const connectionURL = 'mongodb+srv://@cluster0-buyml.azure.mongodb.net/test?retryWrites=true'
+const connectionURL = 'mongodb+srv://antonio:lmao@cluster0-buyml.azure.mongodb.net/clase?retryWrites=true'
 
 mongoose.connect( connectionURL, {
-  user: "antonio",
-  pass: encodeURIComponent('kazekage12!'),
   useNewUrlParser: true,
   useCreateIndex: true
 }, function(error) {
