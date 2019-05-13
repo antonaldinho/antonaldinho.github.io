@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Editar Propuesta</title>
+        <link rel="stylesheet" type="text/css" href="../css/styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="../js/configuration/jquerysession.js"></script>
+    </head>
+</html>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="../html/home.html">
+            <h2 class="home_nav">Inicio</h2>
+        </a>
+        <div class="user_icon">
+            <a href="../html/profile.html"> <img src="../images/icons/user.png" alt="user_icon" height="43"></a>
+        </div>
+    </div>
+
+    <div class="form-container">
+        <h2>Editar propuesta</h2>
+        <!-- <form>
+            <input class="input-proposal" type = "text" name = "name" value = "" maxlength = "100" placeholder="Nombre de la propuesta" /><br/>
+            
+            Categoría:<br/>
+            <input class="input-proposal" type = "text" name = "last_name" value = "" maxlength = "100" /><br/>
+    
+            Descripción:<br/>
+            <input class="input-proposal input-description" type = "text" name = "last_name" value = ""/><br/>
+            <input type = "submit" value ="Submit" />
+        </form> -->
+        <div id="formContent">
+            <!-- Login Form -->
+            <form id="addProposalForm">
+                <input type="text" class="loginData" id="nombrePropuesta" name="login" placeholder="Nombre de la propuesta">
+                <input type="text" class="loginData" id="categoriaPropuesta" name="login" placeholder="Categoría">
+                <input type="text" class="loginData" id="descripcionPropuesta" name="login" placeholder="Descripción">
+                <input id="updateButton" type="button" value="Actualizar">
+            </form>
+        </div>
+    </div>
+
+    <script src="../js/configuration/universal.js"></script>
+    <script src="../js/editProposal.js"></script>
+</body>
