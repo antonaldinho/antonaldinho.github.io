@@ -22,6 +22,7 @@ $( document ).ready(function() {
             $.ajax(settings).done(function (response) {
                 $.session.set("userData", "");
                 $.session.set("token", "");
+                location.href = base + 'login.html';
             });
         }
     })
