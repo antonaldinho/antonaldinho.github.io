@@ -27,6 +27,8 @@ $( document ).ready(function() {
             else {
                 alert("Usuario y/o contraseña no válidos");
             }
-        });
+        }).fail(function(data) {
+            alert(data.responseJSON.error);
+        })
     })
 });
