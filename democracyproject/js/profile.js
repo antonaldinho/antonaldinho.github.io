@@ -236,4 +236,7 @@ $( document ).ready(function() {
     if(userData.userType == "legislator") {
         $("#history-votes").hide();
     }
+    if(userData.userType == "legislator") {
+        $("#addProposalButton").show();
+    }
 })
