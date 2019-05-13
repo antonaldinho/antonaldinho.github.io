@@ -20,8 +20,24 @@ function populateProposals() {
     
     $.ajax(settings).done(function (response) {
         response.proposals.forEach(function(proposal) {
-            const newAppend = '<div class="proposal-who boxed-inner"><h3 class="proposal-title">' + proposal.name + '</h3><h4 id="proposal-category" class="proposal-description">Categoría: ' + proposal.category + '</h4><p class="proposal-description">' + proposal.description + '</p><div class="vote_icons"><img class="vote-button" src="../images/icons/aceptar.png" data-proposal_id="' + proposal._id + '" data-desicion="1" alt="accept" height="43"><img class="vote-button" src="../images/icons/reject.png" data-proposal_id="' + proposal._id + '" data-desicion="0" alt="reject" height="43"></div></div>';
-            proposals.append(newAppend);
+            var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": urls.getProposalResults + proposal._id,
+                "method": "GET",
+                "headers": {
+                  "Content-Type": "application/json",
+                  "Authorization": "Bearer " + token,
+                  "cache-control": "no-cache"
+                },
+                "processData": false,
+                "data": ""
+            }
+            
+            $.ajax(settings).done(function (conteo) {
+                const newAppend = '<div class="proposal-who boxed-inner"><h3 class="proposal-title">' + proposal.name + '</h3><h4 id="proposal-category" class="proposal-description">Categoría: ' + proposal.category + '</h4><p class="proposal-description">' + proposal.description + '<p class="proposal-favor">Favor:' + ' ' + conteo.favor + '</p>' + '<p class="proposal-contra">Contra:</p>' + ' ' + conteo.against + '</p><div class="vote_icons"><img class="vote-button" src="../images/icons/aceptar.png" data-proposal_id="' + proposal._id + '" data-desicion="1" alt="accept" height="43"><img class="vote-button" src="../images/icons/reject.png" data-proposal_id="' + proposal._id + '" data-desicion="0" alt="reject" height="43"></div></div>';
+                proposals.append(newAppend);
+            });
         });
         clickVote();
     });
