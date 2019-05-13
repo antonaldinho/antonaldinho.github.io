@@ -233,4 +233,7 @@ $( document ).ready(function() {
     if(userData.userType == "citizen") {
         $("#history-created").hide();
     }
+    if(userData.userType == "legislator") {
+        $("#history-votes").hide();
+    }
 })
