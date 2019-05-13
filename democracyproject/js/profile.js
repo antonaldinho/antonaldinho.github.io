@@ -1,4 +1,4 @@
-const base = 'https://antonaldinho.github.io/democracyproject/html/';
+const base = 'http://127.0.0.1:5500/frontEnd/html/';
 const userData = JSON.parse($.session.get("userData"));
 const token = $.session.get("token");
 
@@ -226,6 +226,8 @@ function clickDelete() {
 }
 
 $( document ).ready(function() {
+    const editProfileButton = $("#edit-profile-button");
+    editProfileButton.data('userid', userData.id);
     populateUserData();
     getHistorialCreados();
     getHistorialVotos();
@@ -239,4 +241,7 @@ $( document ).ready(function() {
     if(userData.userType == "legislator") {
         $("#addProposalButton").show();
     }
+    editProfileButton.click(function() {
+        location.href = base + 'editProfile.html?id=' + $(this).data('userid');
+    })
 })

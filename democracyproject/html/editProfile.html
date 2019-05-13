@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Editar Perfil</title>
+        <link rel="stylesheet" type="text/css" href="../css/styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="../js/configuration/jquerysession.js"></script>
+    </head>
+</html>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="../html/home.html">
+            <h2 class="home_nav">Inicio</h2>
+        </a>
+        <div class="user_icon">
+            <a href="../html/profile.html"> <img src="../images/icons/user.png" alt="user_icon" height="43"></a>
+        </div>
+    </div>
+
+    <div class="form-container">
+        <h2>Actualizar datos del usuario</h2>
+        <!-- <form>
+            <input class="input-proposal" type = "text" name = "name" value = "" maxlength = "100" placeholder="Nombre de la propuesta" /><br/>
+            
+            Categoría:<br/>
+            <input class="input-proposal" type = "text" name = "last_name" value = "" maxlength = "100" /><br/>
+    
+            Descripción:<br/>
+            <input class="input-proposal input-description" type = "text" name = "last_name" value = ""/><br/>
+            <input type = "submit" value ="Submit" />
+        </form> -->
+        <div id="formContent">
+            <!-- Login Form -->
+            <form id="login">
+                <input type="text" class="loginData" id="registerName" name="login" placeholder="Nombre Completo">
+                <input type="text" class="loginData" id="registerEmail" name="login" placeholder="Email">
+                <input type="password" class="loginData" id="registerPassword" name="login" placeholder="Nueva contraseña">
+                <input type="password" class="loginData" id="registerPasswordConfirmation" name="login" placeholder="Confirmar nueva contraseña">
+                <input type="text" class="loginData" id="registerIne" name="login" placeholder="INE">
+                <input id="registerButton" type="button" value="Actualizar">
+            </form>
+        
+            <a href="profile.html">Regresar</a>
+        </div>
+    </div>
+
+    <script src="../js/configuration/universal.js"></script>
+    <script src="../js/editProfile.js"></script>
+</body>
