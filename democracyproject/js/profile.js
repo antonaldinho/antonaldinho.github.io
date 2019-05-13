@@ -1,4 +1,4 @@
-const base = 'https://antonaldinho.github.io/finalproject/html/';
+const base = 'https://antonaldinho.github.io/democracyproject/html/';
 const userData = JSON.parse($.session.get("userData"));
 const token = $.session.get("token");
 

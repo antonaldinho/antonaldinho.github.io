@@ -1,4 +1,4 @@
-const base = 'https://antonaldinho.github.io/finalproject/html/';
+const base = 'https://antonaldinho.github.io/democracyproject/html/';
 
 $( document ).ready(function() {
     $("#button_login").click(function(){
