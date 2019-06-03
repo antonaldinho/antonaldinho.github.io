@@ -67,7 +67,7 @@ function getEarthquakes(map) {
                 var contentString = '<div id="content">'+
                 '<div id="siteNotice">'+
                 '</div>'+
-                '<h1 id="firstHeading" class="firstHeading">Earthquake info</h1>'+
+                '<h4 id="firstHeading" class="firstHeading">Earthquake info</h1>'+
                 '<div id="bodyContent">'+
                 '<p><b>Date: </b>'+
                 date +
