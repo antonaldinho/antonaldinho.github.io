@@ -21,11 +21,6 @@ function geocodeAddress(geocoder, resultsMap) {
             console.log(results[0].geometry.viewport);
             resultsMap.setCenter(results[0].geometry.location);
             resultsMap.setZoom(9);
-            // var marker = new google.maps.Marker({
-            //     map: resultsMap,
-            //     position: results[0].geometry.location
-            // });
-            //console.log(resultsMap.getBounds());
             north = results[0].geometry.viewport.na.l;
             south = results[0].geometry.viewport.na.j;
             east = results[0].geometry.viewport.ga.l;
@@ -51,7 +46,6 @@ function getEarthquakes(map) {
         url: 'http://api.geonames.org/earthquakesJSON?north='+north+'&south='+south+'&east='+east+'&west='+west+'&username=antonaldinho',
         dataType: 'jsonp'
     }).done(function(response) {
-        //console.log(response);
         if(response.earthquakes.length == 0) {
             M.toast({html: 'No earthquakes found'});
         }
